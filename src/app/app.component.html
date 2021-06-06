@@ -1,0 +1,183 @@
+<router-outlet></router-outlet>
+ <div class ="fixNav">
+    <div class="navigation-wrapper">
+      <div class="logo"><img src="../assets/logo.png" alt="">
+      </div>
+      <nav>
+        <ul class="menu">
+           
+            <li class="item">Products</li>
+            <li class="item">Solutions</li>
+            <li class="item">Pricing</li>
+            <li class="item button">
+              <button id="navlist"> <span class="btn-text">Log In</span></button>
+            </li>
+            <li class="item button">
+              <button id="getstarted"> <span class="btn-text"> Get Started</span></button>
+             </li>
+        </ul>
+      </nav>
+    </div>
+</div>
+
+ 
+ <section class="rowSection">
+   <img class="bigCircle" src="../assets/circle.svg" alt="">
+   <img class="smallCircle" src="../assets/blob-small.svg" alt="">
+
+   <div class="container">
+    <section class="first_content">
+      <div>
+        <div style="margin: 0px 0px 10px 50px;">
+          <h1 class="header-text">We make it Super <br/>Simple</h1>
+          <div class="stripe1"></div>
+        </div>
+      
+        <div style="position: relative;" >
+          <img src="../assets/collect_img-video.png" alt="" width="70%">
+          <img class="dot1"  src="../assets/accounting_dots.svg" alt="">
+        </div> 
+      </div>
+      <div style="margin-top: 30px;" >
+        <div class="calc">
+          <section class="editLoan">
+            <div style="background-color: #e7f4fd;
+            font-family: Montserrat-Medium;
+            font-weight: 400;
+            padding: 15px 0px;
+            text-align: center;">Eligibility Calculator
+            </div>
+            <div class="loan-wrapper">
+              <div class="slidecontainer">
+                <label>Monthly Income</label>
+                <p>&#x20b9; {{value| number}}</p>
+                <input #selectedvalue type="range" min="0" max="300000" value="50" class="slider" id="myRange" (input)="valueChanged1(selectedvalue)">
+                <span class="firstrange">1,00,000</span>
+                <span class="scndrange">3,00,000</span>
+              
+              </div>
+            </div>
+            <div class="loan-wrapper">
+              <div class="slidecontainer">
+                <label>Monthly Income</label>
+                <p>&#x20b9; {{value1| number}}</p>
+                <input #selectedvalue1 type="range" min="0" max="100000" value="50" class="slider" id="myRange1" (input)="valueChanged2(selectedvalue1)">
+              </div>
+            </div>
+            <div class="loan-wrapper">
+              <div class="dropdown">
+                <label>Repayment Tenure</label>
+                <div >
+                  <p style="font-weight: 600;"> 6 months</p>
+                  <span  class="dropbtn"> &#9662;</span>
+                </div>
+                <hr>
+             </div>
+            </div>
+            <div class="loan-wrapper">
+              <div style="display: flex;
+              justify-content: space-between;">
+                <label> Do you have any existing loans?</label>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="toggle round"></span>
+                </label>
+             </div>
+            </div>
+            <div class="loan-wrapper">
+              <div>
+                <label> EMI of existing loan(optional)</label>
+                <input type="text"  class="no-outline" placeholder="&#x20b9; 15,000">
+                 <hr/>
+             </div>
+            </div>
+          </section>
+          <img class="dot"  src="../assets/accounting_dots.svg" alt="">
+          <section class="viewLoan">
+            <div class="loan">
+              <label style="font-weight: 400;">Loan Amount</label>
+              <p> &#x20b9; 1,00,000</p>
+            </div>
+            <div class="loan">
+              <label style="font-weight: 400;">Your EMI will be </label>
+              <p> &#x20b9; 15,000</p>
+            </div>
+            <button>
+              <span class="btn-text common">Get Money</span>
+            </button>
+          </section>
+        </div>
+      </div>
+    </section>
+  </div> 
+ </section>
+ <section class="scnd_content">
+   <div class="container">
+     <div class="content-wrapper">
+      <div class="scnd_content_part1">
+        <div>
+          <div class="card">
+            <div class="card-wrapper">
+              <img src="../assets/Get Paid Instantly.png" alt="">
+              <h4 class="h-text">Quick cash disbursement</h4>
+              <p class="card-text">Get terms loans that your business needs within 72 hrs</p>
+            </div>
+           
+          </div>
+          <div class="card">
+            <div class="card-wrapper">
+              <img src="../assets/Low interest rate.png" alt="">
+              <h4 class="h-text">Low-interest rate</h4>
+              <p class="card-text">Acheive your financial goal with an amazing interest rate starting at 13% per annum </p>
+            </div>
+          
+          </div>
+          <div class="card">
+            <div class="card-wrapper">
+              <img src="../assets/Secure Payments.png" alt="">
+              <h4 class="h-text">Zero paperwork</h4>
+              <p class="card-text">Get started instantly by submitting only your basic details & bank statements</p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 115px;">
+          <div class="card">
+            <div class="card-wrapper">
+              <img src="../assets/freelancer_feature_icon_6@1.5x.png" alt="">
+              <h4 class="h-text">Ace your business finances</h4>
+              <p class="card-text">Manage banking, accounting & everything in between on one platform</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-wrapper">
+              <img src="../assets/Covid.png" alt="">
+              <h4 class="h-text">Loans to fight COVID-19</h4>
+              <p class="card-text">Zero EMI for first 3 months on Back to Business loans of upto 1 lakh</p>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+      <div class="scnd_content_part2">
+        <div>
+          <h1 class="header-text">Boost your business <br/>with Open</h1>
+          <div class="stripe2"></div>
+          <p class="s_content">
+           Get your hands on a term loan that's <br/>crafted for your business
+          </p>
+           <button type="submit" class="openAccount">
+            <span class="btn-text">Get an Open Account</span>
+          </button>
+       
+        </div>
+      </div>
+     </div>
+    
+   </div>
+  
+  <div>
+
+  </div>
+</section>
+  
+ 
